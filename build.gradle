@@ -8,3 +8,12 @@ version '1.0-SNAPSHOT'
 repositories {
     mavenCentral()
 }
+
+dependencies {
+    testCompile 'org.junit.jupiter:junit-jupiter-engine:5.5.2'
+    implementation 'org.hamcrest:hamcrest-core:2.1'
+}
+
+test {
+    useJUnitPlatform()
+}
